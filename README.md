@@ -4,6 +4,13 @@
 
 I wanted test if is possible to create a docker container in a docker container recrusive.
 
+## Setup
+
+Every used container is capable of running own docker containers. 
+This sub container will run on the docker host of the first started container.
+All container are still running when started and start a new container.
+There is a counter implemented that count the started container instances. 
+
 ## Warning
 
 **!!! DANGER !!!** 
