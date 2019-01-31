@@ -13,6 +13,7 @@ There no direct way to stop the all containers because they are so many.
 Try in emergency STRG+C on Root Container or
 ``` 
 docker stop the-one
+docker stop $(docker ps -a -q)
 ```
 After this the docker daemon must be stopped, because the subcontainer are possible to contiune the creation without root.
 ```
