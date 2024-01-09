@@ -15,9 +15,9 @@ There is a counter implemented that count the started container instances.
 
 **!!! DANGER !!!** 
 This Docker file will work recrusive and can create very fast a lot of container from same image.
-In our test in 1 min 100 Docker Container can be created
+In our test in 1 min 100 Docker Container can be created. 
 There no direct way to stop the all containers because they are so many.
-Try in emergency STRG+C on Root Container or
+Try in emergency STRG+C on Root Container or shutdown host
 ``` 
 docker stop the-one
 docker stop $(docker ps -a -q)
